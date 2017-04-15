@@ -1,0 +1,26 @@
+{
+  "name": "music_hacks",
+  "version": "1.0.0",
+  "description": "Music Hacks",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TKnologic104/Music_Hack.git"
+  },
+  "keywords": [
+    "music",
+    "hacks"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TKnologic104/Music_Hack/issues"
+  },
+  "homepage": "https://github.com/TKnologic104/Music_Hack#readme",
+  "dependencies": {
+    "express": "^4.15.2"
+  }
+}
