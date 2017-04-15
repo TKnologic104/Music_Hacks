@@ -3,8 +3,8 @@
  *  array of more meaningful values
  *  using the splitOctaves method.
  */
-
 var source, fft;
+
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
@@ -20,7 +20,7 @@ function setup() {
 function draw() {
   background(220);
   var spectrum = fft.analyze();
-  var newBuffer = [];
+  //var newBuffer = [];
 
   // scaledSpectrum is a new, smaller array of more meaningful values
   var scaledSpectrum = splitOctaves(spectrum, 3);
