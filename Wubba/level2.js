@@ -1,3 +1,4 @@
+level2(){
 var source, fft;
 
 function setup() {
@@ -43,7 +44,7 @@ function start() {
 	// door.isSensor = true;
 	// door.isStatic = true;
 
-	var collider = Bodies.rectangle(600, 75, 75, 75, {
+	var collider = Bodies.rectangle(650, 400, 75, 75, {
         isSensor: true,
         isStatic: true,
         render: {
@@ -64,7 +65,12 @@ function start() {
 	});
 	
 	//bottom block
-	var block = Bodies.rectangle(440, 550, 1000, 300, {
+	var block = Bodies.rectangle(440, 550, 650, 300, {
+		isStatic: true
+	});
+
+	//top block
+	var block = Bodies.rectangle(440, 300, 650, 300, {
 		isStatic: true
 	});
 	
@@ -77,7 +83,7 @@ function start() {
 	//adds the collider "door" object
 	World.add(engine.world, [
         collider,
-        Bodies.rectangle(600, 75, 75, 75, { 
+        Bodies.rectangle(650, 400, 75, 75, { 
             isStatic: true,
             render: {
                 fillStyle: 'transparent',
@@ -133,9 +139,8 @@ function start() {
 	        World.clear(engine.world);
 	        //World.add(engine.world, [ball]);
 	        location.reload();
-	    }
-	     if(event.keyCode == 39) {
-	        console.log("right was hit");
+
 		}
 	});
+}
 }
