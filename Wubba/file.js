@@ -106,6 +106,7 @@ function start() {
             if (pair.bodyA === collider) {
                 //pair.bodyB.render.strokeStyle = "ff0000";
                 alert("WUBBA LUBBA DUB DUB");
+                window.location = "/index2.html";
             } else if (pair.bodyB === collider) {
                 pair.bodyA.render.strokeStyle = "ff0000";
             }
@@ -136,6 +137,7 @@ function start() {
 	    }
 	     if(event.keyCode == 39) {
 	        console.log("right was hit");
+	        window.location = "/index2.html";
 		}
 	});
 }

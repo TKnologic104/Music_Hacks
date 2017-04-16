@@ -1,4 +1,3 @@
-level2(){
 var source, fft;
 
 function setup() {
@@ -9,7 +8,7 @@ function setup() {
   fft.setInput(source);
 }
 
-function start() {
+function level2() {
 	// module aliases
 	var Engine = Matter.Engine,
 		Render = Matter.Render,
@@ -141,6 +140,10 @@ function start() {
 	        location.reload();
 
 		}
+		if(event.keyCode == 39) {
+	        console.log("right was hit");
+	        window.location.href = "localhost:3000/index2.html";
+
+		}
 	});
-}
 }
